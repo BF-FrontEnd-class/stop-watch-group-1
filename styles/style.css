@@ -27,6 +27,10 @@ body
     align-items: center;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .buttons > button
 {
     font-size: 22px;    
