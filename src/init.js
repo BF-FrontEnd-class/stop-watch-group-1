@@ -1,5 +1,4 @@
 // IMPORT 
-import { data } from "./data.js";
 import { buttons } from "./data.js";
 import {getTime} from "./utils/getTime.js";
 import { stopHandler } from "./handlers/stopHandler.js";
@@ -21,7 +20,7 @@ buttons.forEach( (element) =>{
         )
     }
     if(element.id=== "stop"){
-        btn.addEventListener("click",stopHandler);
+        btn.addEventListener("click", stopHandler);
     }
     
 }

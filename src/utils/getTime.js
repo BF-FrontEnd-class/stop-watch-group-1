@@ -1,6 +1,6 @@
 // IMPORT DATA
-import {data} from '../data.js';
 import { timeStamps } from '../data.js';
+import { data } from '../data.js';
 
 
 export function getTime () {
@@ -8,15 +8,13 @@ export function getTime () {
     let seconds =0;
     let minutes = 0;
 
-    const setTime = setInterval(()=> {
+      data.watchInterval = setInterval(()=> {
       milliseconds += 10
       timeStamps.milliseconds.innerHTML = ": " + milliseconds;
-       //console.log(milliseconds);
        if (milliseconds === 1000){
          seconds++ ;
          milliseconds =0 ;
          timeStamps.seconds.innerHTML =  ": " + seconds  ;
-         //console.log(seconds);
        }  
        if (seconds === 60){
          minutes++ ;
@@ -27,5 +25,4 @@ export function getTime () {
       }, 
       10
     )
-   
 }
