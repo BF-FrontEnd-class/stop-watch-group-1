@@ -10,11 +10,11 @@ export function getTime () {
 
       data.watchInterval = setInterval(()=> {
       milliseconds += 10
-      timeStamps.milliseconds.innerHTML = ": " + milliseconds;
+      timeStamps.milliseconds.innerHTML = milliseconds;
        if (milliseconds === 1000){
          seconds++ ;
          milliseconds =0 ;
-         timeStamps.seconds.innerHTML =  ": " + seconds  ;
+         timeStamps.seconds.innerHTML =  seconds  ;
        }  
        if (seconds === 60){
          minutes++ ;
