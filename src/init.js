@@ -2,7 +2,7 @@
 import { data } from "./data.js";
 import { buttons } from "./data.js";
 import {getTime} from "./utils/getTime.js";
-
+import { stopHandler } from "./handlers/stopHandler.js";
 // import components 
 import { createButtons } from "./components/createButtons.js";
 
@@ -19,6 +19,9 @@ buttons.forEach( (element) =>{
         btn.addEventListener("click", 
         getTime 
         )
+    }
+    if(element.id=== "stop"){
+        btn.addEventListener("click",stopHandler);
     }
     
 }

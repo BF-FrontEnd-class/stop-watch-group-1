@@ -1,3 +1,7 @@
-const stopCounterTime = document.getElementById("stop");
+import{ getTime } from "../utils/getTime.js";
+import { data } from "../data.js";
+export const stopHandler =() => {
+clearInterval (getTime)
+ 
 
-stopCounterTime.addEventListener("click", )
+}

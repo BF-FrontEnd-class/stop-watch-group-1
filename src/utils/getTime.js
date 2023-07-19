@@ -8,7 +8,7 @@ export function getTime () {
     let seconds =0;
     let minutes = 0;
 
-    setInterval(()=> {
+    const setTime = setInterval(()=> {
       milliseconds += 10
       timeStamps.milliseconds.innerHTML = ": " + milliseconds;
        //console.log(milliseconds);
