@@ -1,9 +1,16 @@
-import { timeStamps } from "../data.js"
-import { stopHandler } from "./stopHandler.js";
+import { data } from '../data.js';
+import updateTimer from '../components/updateTimer.js';
 
-export const resetHandler = () => {
-    stopHandler();
-    timeStamps.minutes.innerText = "00 ";
-    timeStamps.seconds.innerText = "00 ";
-    timeStamps.milliseconds.innerText = "00";
-}
+const resetHandler = () => {
+    if (data.intervalId) {
+        clearInterval(data.intervalId);
+        data.intervalId = null;
+    }
+
+    data.minutes = 0;
+    data.seconds = 0;
+    data.milliseconds = 0;
+    updateTimer();
+};
+
+export default resetHandler;

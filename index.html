@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Stop Watch</title>
-</head>
-<body>
-    <div class="container">
-      <h1> Stopwatch</h1> 
-      <div id ="stopwatch">
-        <span class = "minutes" id ="minutes">00</span>
-        <span>:</span>
-        <span class = "seconds" id = "seconds">00</span>
-        <span>:</span>
-        <span class = "milliseconds" id ="milliseconds">000</span>
-        <div class="buttons" id="buttons">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Stop Watch</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Stopwatch</h1>
+            <div id="stopwatch">
+                <span class="minutes" id="minutes">00</span> :
+                <span class="seconds" id="seconds">00</span> :
+                <span class="milliseconds" id="milliseconds">000</span>
+                <div class="buttons" id="buttons">
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="stop">Stop</button>
+                    <button type="button" id="reset">Reset</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script type ="module" src = "src/init.js" ></script>
-</body>
+        <script type="module" src="src/init.js"></script>
+    </body>
 </html>

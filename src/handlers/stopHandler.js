@@ -1,6 +1,9 @@
-import { data } from "../data.js"
+import { data } from '../data.js';
 
+const stopHandler = () => {
+    if (data.intervalId) {
+        clearInterval(data.intervalId);
+    }
+};
 
-export const stopHandler = () => {
-  clearInterval(data.watchInterval);
-}
+export default stopHandler;
