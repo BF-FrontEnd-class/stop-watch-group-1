@@ -6,5 +6,4 @@ export const resetHandler = () => {
     timeStamps.minutes.innerText = "00 ";
     timeStamps.seconds.innerText = "00 ";
     timeStamps.milliseconds.innerText = "00";
-
 }
