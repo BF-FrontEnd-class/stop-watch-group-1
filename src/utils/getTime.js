@@ -16,6 +16,7 @@ export function getTime () {
          seconds++ ;
          milliseconds =0 ;
          timeStamps.seconds.innerHTML = seconds  ;
+         timeStamps.seconds.innerHTML =  seconds  ;
        }  
        if (seconds === 60){
          minutes++ ;
