@@ -4,6 +4,7 @@ import {getTime} from "./utils/getTime.js";
 import { stopHandler } from "./handlers/stopHandler.js";
 // import components 
 import { createButtons } from "./components/createButtons.js";
+import { resetHandler } from "./handlers/resetHandler.js";
 
 // buttons container 
 
@@ -22,7 +23,9 @@ buttons.forEach( (element) =>{
     if(element.id=== "stop"){
         btn.addEventListener("click", stopHandler);
     }
-    
+    if(element.id === "reset"){
+        btn.addEventListener("click", resetHandler);
+    }
 }
 )
 
